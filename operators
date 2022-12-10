@@ -1,0 +1,116 @@
+four basic operators we have :
+1.arithmatic operators 
+2.assignment operators
+3.relational operaotors
+4.logical operators
+5.urinary operaotors
+
+1.arithmatic operators
+we use this to perform ,
+addition,substraction,multiplication,division,modulus,exponential.
+x=5
+y=10
+addition:
+>>> x+y
+15
+substraction
+>>> x-y
+-5
+multiplication
+>>> x*y
+50
+division
+>>> x/y
+0.5
+modulus
+>>> x%y
+5
+exponent
+>>> x**y
+9765625
+
+
+2.assignment operators
+= is the assignment operator ,
+however there are more operator that are assignment
+variable operator = variable/constant
+>>> a=90
+>>> b=89
+>>> a+=b
+>>> print(a)
+179
+
+>>> a=90
+>>> b=89
+>>> a-=b
+>>> print(a)
+1
+
+>>> a=90
+>>> b=89
+>>> a*=b
+>>> print(a)
+8010
+
+>>> a=90
+>>> b=89
+>>> a/=b
+>>> print(a)
+1.0112359550561798
+
+>>> a=9
+>>> b=8
+>>> a**=b
+>>> print(a)
+43046721
+
+consecutive assignment 
+by using ,(comma) 
+syntax: var1,var2,var3,varn = value1,value2, value3, valuen
+>>> a,b,c,d=5,4,3,2
+>>> print(a)
+5
+>>> print(b)
+4
+>>> print(c)
+3
+>>> print(d)
+2
+
+3) uninary operator 
+uninary is basicallly using single operator 
+we have concept of negation (negative of the value )
+>>>a=5
+>>> a=-a
+>>> print(a)
+-5
+
+4)Relational operator 
+this operators compares the two variable or constant 
+(<,>,<=,>=,==,!=)
+>>> a=45
+>>> b=98
+>>> a>b
+False
+>>> a<b
+True
+>>> a==b
+False
+>>> a<=b
+True
+>>> a>=b
+False
+>>> a!=b
+True
+
+5)Logical operators 
+these operators are used to apply logic when two different conditions are combinely being used
+( and , or,  not)
+>>> a<b and b>a (and logic basically checks if both are true return true)
+True
+>>> a>b or b<a ( or logic checks if one of the condition is true then retuen true )
+False
+>>> ab=True 
+>>> not ab  (not logic complements the input )
+False
+
