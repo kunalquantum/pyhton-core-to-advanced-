@@ -1,0 +1,86 @@
+Python variables :
+the memory is automatically allocated depending upon the values given or assigned to the variable 
+example:
+num=5(this will allocate the memory of an integer type)= (2 byte)
+name = "kunal" ( This will allocate the memory of string type ) (string (size) )
+pie= 3.14  ( This will allocate the memory of float type ) (4 byte )
+
+Address of the variable:
+
+id(variable) (id is the inbuilt function that returns the address  of the variable)
+>>> num=5
+>>> id(num)
+2443497308528
+
+>>> name="kunal sharma "
+>>> id(name)
+2443502925552
+>>>
+
+>>> a= 10
+>>> b=a
+>>> id(a)
+2443497308688
+>>> id(b)
+2443497308688
+>>>
+
+In python , if the two variables pointing to the same data they will have the same address
+
+>>> id(10)
+2443497308688
+
+here we have the address of the 10 , also the same as the two variable , hence we conclude that the address of the object beelongs to the object 
+irrespective of the variables 
+
+suppose we have a new variable k
+and assign the value 10 to k 
+then we will again get the address same for the k 
+>>> k=10
+>>> id(k)
+2443497308688
+
+hence this python variables is also called a 'tag' as we are tagging them 
+in the above case we are tagging the variable a,b,k to the value 10
+
+now if we change the value ,
+do it will change the address?
+yes, ofcourse 
+as the new value means new object and new address tag (variable)
+
+>>> a=9
+>>> id(9)
+2443497308656
+
+if we assign the b as the a and the address of a changed the address of b also changes 
+
+>>> b=a
+>>> id(b)
+2443497308656
+
+suppose we have the a=9,b=9,k=8
+here the value 10 is still there but not tagged by any variable 
+here we will use the concept of garbage collection
+here 10 is ready for the garbage collection
+
+In python we cannnot create a constant variable 
+although we can show a variable as a constant but cannot restrict any one from changing the value of that variable 
+example:
+>>> PI=3.14
+here by writing it in the capital letter we are mentioning variable to be constant
+but anyone can alter the value 
+>>> PI=9.09
+>>> print(PI)
+9.09
+
+Now the concept type or identifying the data type of the variable :
+we have a function fpr that is type(variable)
+>>> name=67
+>>> type(name)
+<class 'int'>
+>>> number="kunal sharma"
+>>> type(number)
+<class 'str'>
+>>> decimal=4.879
+>>> type(decimal)
+<class 'float'>
