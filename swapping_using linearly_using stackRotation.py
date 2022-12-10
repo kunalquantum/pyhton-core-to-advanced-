@@ -8,10 +8,8 @@ print("value of a :",a)
 print("value of b",b)
 #(process of swapping the values)
 
-temp=0
-temp=a
-a=b
-b=temp
+a,b=b,a
+#here we have used the linear assignment technique of python along with stack reverse property
 # priting the outputs
 print("after  swapping:")
 print("value of a :",a)
