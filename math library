@@ -1,0 +1,74 @@
+import math .. importing math library will allow you to use .math function
+
+math.sqrt(value) ... gives the square root of the value 
+math.pow(base,power)....gives the power of the base provided 
+math.floor( value)...gives the least integer possible for the floating value
+math.ceil(value)...gives the max integer value possible for the float value
+
+constants:
+math.pi.... gives the value of the pi 
+math.e......gives the value of epsilon
+
+
+> print(math.floor(12.5622323))
+12
+>>> print(math.ceil(12.5622323))
+13
+
+>>> print(math.pow(12,7))
+35831808.0
+
+>>> x=math.sqrt(4)
+>>> print(x)
+2.0
+
+examples of constant
+>>> print(math.pi)
+3.141592653589793
+>>> print(math.e)
+2.718281828459045
+
+we can also use the reference variable for the 
+import math as m
+so wherever we were using the math we can simply write m
+>>> import math as m
+>>> print(m.sqrt(45))
+6.708203932499369
+
+we can also use the way of writing and using the function is that 
+from math import sqrt,floor,ceil,pow
+>>> from math import sqrt,floor,ceil
+>>> sqrt(34)
+5.830951894845301
+>>> floor(34)
+34
+
+there are many function of math available at help('math')
+DESCRIPTION
+    This module provides access to the mathematical functions
+    defined by the C standard.
+
+FUNCTIONS
+    acos(x, /)
+        Return the arc cosine (measured in radians) of x.
+
+        The result is between 0 and pi.
+
+    acosh(x, /)
+        Return the inverse hyperbolic cosine of x.
+
+    asin(x, /)
+        Return the arc sine (measured in radians) of x.
+
+        The result is between -pi/2 and pi/2.
+
+    asinh(x, /)
+        Return the inverse hyperbolic sine of x.
+
+    atan(x, /)
+        Return the arc tangent (measured in radians) of x.
+
+        The result is between -pi/2 and pi/2.
+
+    atan2(y, x, /)
+        Return the arc tangent (measured in radians) of y/x.
