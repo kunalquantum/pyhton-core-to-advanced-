@@ -1,0 +1,53 @@
+bitwise operators :
+we have different bitwise operators which will work on bits (o and 1) 
+they are : 
+1.complement (~)(tilde)
+this operator performs the one's compliment of the binary form of the given number
+syntax: ~number or ~variable
+>>> ~12
+-13
+
+2.and(&)(and)
+here we have , and of the binary form to the two operands 
+12= 1100
+11= 1011
+we will perform & operation
+>>> 12&11
+8
+
+3.or(|)
+this operator will perform the binary or  operation on binary number of the given number
+>>> bin(12)
+'0b1100'
+>>> bin(23)
+'0b10111'
+>>> 12|23
+31
+
+4.xor(^)
+This will perform the binary xor operation on the binary form of the number 
+>>> bin(12)
+'0b1100'
+>>> bin(23)
+'0b10111'
+>>> 12^23
+27
+
+5.left shift(<<)
+this  operator shifts the binary digits , to the left wards and the vacant places are filled with zeros
+>>> 12>>2
+3
+12=1100 in binary and it get shifted by two places towards left it results to 0011 which is three
+
+6.right shift(<<)
+this  operator shifts the binary digits , to the right wards and the vacant places are filled with zeros
+>>> 12<<2
+48
+12=1100 in binary and it get shifted by two places towards right it results to 110000 which is 48
+
+
+
+
+
+
+
