@@ -1,0 +1,42 @@
+number system conversion 
+there are many number system 
+like binary, decimal, hexadecimal,octal,binary coded decimal, gray code,excess three etc
+
+conversion decimal into binary 
+we have a function bin()
+syntax: bin(number)
+>>> a=988
+>>> bin(a)
+'0b1111011100'
+
+conversion of binary to decimal
+we will use syntax: 0bnumber_in_binary
+>>> 0b10101
+21
+
+conversion of decimal to octal
+we have a function oct(number)
+>>> oct(67)
+'0o103'(here our answer is after  0o which is 103)
+
+we can use 0o to convert octal to decimal
+we will use syntax: 0onumber_in_octal
+>>> 0o67
+55
+
+conversion of decimal to hexadecimal
+we have a function hex(number)
+>>> hex(34)
+'0x22'(here 0x is the code after which we have our result 22)
+
+we can use 0x to convert number form hex to decimal
+we will use syntax: 0xnumber_in_hex
+>>> 0x233
+563
+
+
+
+
+
+
+
