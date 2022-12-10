@@ -1,0 +1,184 @@
+we have data types :
+1.none
+2.numeric
+3.list
+4.tuple
+5.set
+6.string
+7.range
+8.dictionary
+
+1)none
+Now let us see , first data type whic is none 
+a variable with no value is called as none (in genenral we called it as null but here we called it as none)
+
+2)numeric
+Next
+we have numeric , 
+whiich is broadly divided into four sub types :
+                                              1. int
+                                              example:
+                                                >>> num=780
+                                                >>> print(num)
+                                                     780
+                                                >>> type(num)
+                                                <class 'int'>
+                                                
+                                              2. float
+                                              >>> num=78.90
+                                              >>> print(num)
+                                                 78.9
+                                              >>> type(num)
+                                              <class 'float'>
+                                              
+                                              3. complex
+                                              in this data type we will have two parts real and imaginary 
+                                              in python concvention we will use j for imaginary representation
+                                              complex=a+bj
+                                              
+                                              >>> num=5+8j
+                                              >>> type(num)
+                                              <class 'complex'>
+                                              
+                                              4. bool
+                                              these are binary values 
+                                              1 or 0 which are represented by true or false 
+                                              depending on the condition true or false we will get an bool answer (true or false)
+                                              >>> n=9
+                                              >>> bool=k<n
+                                              >>> bool
+                                                False
+                                              >>> sushmita=560
+                                              >>> sonali=456
+                                              >>> sonali<sushmita
+                                                  True
+                                              
+Inter-Conversion of data types:
+for conversion we will use the concept of type casting 
+the function for type casting we will use datatype(value)
+for example:
+>>> a=5.6           ....float type
+>>> b=int(5.6)      .....type casting into int 
+>>> 5               .....getting the int type
+<class 'type'>
+>>> k=45             ... int type
+>>> float(k)         ..... float typecast
+45.0                 .... getting float type
+
+conversion into complex number
+we will use the function for complex that is complex(real, imaginary)
+if dont provide the variable for a particular field then we will get a zero automatically
+>>> k=9
+>>> complex(k) ... providing only real part
+(9+0j)          ... result will give imaginary as zero
+>>> b=9
+>>> complex(k,b) ....provinding both fields   
+(9+9j)           ....result give both values 
+complex(0,k)     ..... providing only imaginary part 
+9j  
+
+conversion of boolean into integer
+>>> int(True)
+1
+>>> int(False)
+0
+the data types are sequence data types (list,set,string range)
+3)List (square braclets [])
+now we have list which is sequence data type :
+syntax : name_of_list = [ val1, val2, val3,valn.. ]
+example
+
+>>> mylist=[12,"Kunal",56.98,"kunal",908,True,5+7j]
+>>> print(mylist)
+[12, 'Kunal', 56.98, 'kunal', 908, True, (5+7j)]
+
+it is closed in the square brackets , and also the it can contails the values irrespective of any data types can be stored togather 
+
+the data type is:
+
+>>> type(mylist)
+<class 'list'>
+
+usually it used to store the data of same domain 
+
+4) set ( curly brackets {} )
+it is also the sequence data type 
+syntax: 
+example:
+ myset={1, 90.09,1,90.09,7,1}
+>>> print(myset)
+{1, 90.09, 7}
+>>> type(myset)
+<class 'set'>
+no repeatation is allowed in set
+
+5)tuple(round brackets ())
+this is a sequence data type
+syntax:name_of_tupple=(val1, val2, val3,valn..)
+
+example:
+>>> mytuple=(76756,"tiger",76.3,90,628,"ninja")
+>>> print(mytuple)
+(76756, 'tiger', 76.3, 90, 628, 'ninja')
+>>> type(mytuple)
+<class 'tuple'>
+
+5) String (under quotes '',"")
+anything inside the qoutes is called as the string data type
+now let us see the 
+syntax:
+name_of_string = "statement"
+example
+>>> kingdom="roman empire"
+>>> print(kingdom)
+roman empire
+>>> type(kingdom)
+<class 'str'>
+
+6) range 
+this data type is used to give or provide the range we need to mention the starting and the ending of the range 
+syntax: range(starting_value,ending_value)
+example
+>>> range(2,40)
+range(2, 40)
+
+if we provide the single value it will be considered as the endpoint as the default will be zero for starting point
+>>> range(10)
+range(0, 10)
+
+here we can convert a range into a list 
+syntax: list(range(start_point, end_point))
+>>> list(range(5,20))
+[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+we can have a list with different iteration
+syntax: list(range(start_point, end_point,difference)).. here the difference provides the change in the list
+suppose the list of even numbers 
+>>> list(range(0,100,2))
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98]
+suppose the list of odd numbers
+>>> list(range(1,100,2))
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99]
+just with small difference we can have a huge difference 
+
+
+7) dictionary
+here we assign a value to every index number 
+(this is like assinging the meaning to every index number or a name )
+we use semi colon to assign the value to the key
+
+syntax: name_of_dictionary={"key1":"value1","key2":"value2","key3":"value3","keyn":"valuen"}
+>>> mydictionary={"kunal":"king of venice","siddhi":"Queen of venice"}
+syntax: name_of_dictionary.key()
+>>> mydictionary.keys()                    .... the .key() fucntion shows all the keys
+  
+dict_keys(['kunal', 'siddhi'])
+syntax: name_of_dictionary.values()
+>>> mydictionary.values()                  .....the .values() function shows all the values
+dict_values(['king of venice', 'Queen of venice'])
+accessing the values from the keys 
+syntax: name_of_dictionary['key']
+>>> mydictionary['kunal']  
+'king of venice'
+>>> mydictionary['siddhi']
+'Queen of venice'
